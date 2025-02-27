@@ -1,0 +1,2 @@
+# Desafios_Heineken_Inteligencia_Artificial_Aplicada_a_Dados_com_Copilot
+Para prática em análise de dados e inteligência artificial
