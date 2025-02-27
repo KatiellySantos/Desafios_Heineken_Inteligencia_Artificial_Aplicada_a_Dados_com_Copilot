@@ -1,0 +1,116 @@
+Passo a Passo do Projeto de Banco de Dados de Oficina
+
+1. Criação das Tabelas:
+
+    1.1. Tabela clientes:
+
+        - idclientes: chave primária, tipo int.
+        - nome_cliente: varchar(100).
+        - endereco_cliente: varchar(255).
+        - telefone_cliente: varchar(20).
+        - email_cliente: varchar(100).
+
+    1.2. Tabela veiculos:
+
+        - idveiculos: chave primária, tipo int.
+        - placa_veiculo: varchar(10).
+        - modelo_veiculo: varchar(100).
+        - ano_veiculo: tipo int.
+        - cor_veiculo: varchar(50).
+        - tipo_combustivel: varchar(50).
+        - clientes_idclientes: chave estrangeira, tipo int, referenciando clientes(idclientes).
+
+    1.3. Tabela ordens_de_servicos:
+
+        - idordens_de_servicos: chave primária, tipo int.
+        - data_emissao: datetime.
+        - valor_servico: decimal(10,2).
+        - status_servico: varchar(50).
+        - data_conclusao: datetime.
+        - veiculos_idveiculos: chave estrangeira, tipo int, referenciando veiculos(idveiculos).
+        - equipes_idequipes: chave estrangeira, tipo int, referenciando equipes(idequipes).
+        - observacoes: texto.
+
+    1.4. Tabela equipes:
+
+        - idequipes: chave primária, tipo int.
+        - nome_equipe: varchar(100).
+
+    1.5. Tabela mecanicos:
+
+        - idmecanicos: chave primária, tipo int.
+        - nome_mecanico: varchar(100).
+        - endereco_mecanico: varchar(255).
+        - telefone_mecanico: varchar(20).
+        - email_mecanico: varchar(100).
+        - especialidade_mecanico: varchar(100).
+
+    1.6. Tabela pecas:
+
+        - idpecas: chave primária, tipo int.
+        - descricao_peca: texto.
+        - valor_peca: decimal(10,2).
+
+    1.7. Tabela servico:
+
+        - idservico: chave primária, tipo int.
+        - descricao_servico: texto.
+        - valor_mao_de_obra: decimal(10,2).
+
+    1.8. Tabela itens_os:
+
+        - iditens_os: chave primária, tipo int.
+        - servico_idservico: chave estrangeira, tipo int, referenciando servico(idservico).
+        - pecas_idpecas: chave estrangeira, tipo int, referenciando pecas(idpecas).
+        - ordens_de_servicos_idordens_de_servicos: chave estrangeira, tipo int, referenciando ordens_de_servicos(idordens_de_servicos).
+
+    1.9. Tabela equipe_mecanicos:
+
+        - idequipemecanicos: chave primária, tipo int.
+        - equipes_idequipes: chave estrangeira, tipo int, referenciando equipes(idequipes).
+        - mecanicos_idmecanicos: chave estrangeira, tipo int, referenciando mecanicos(idmecanicos).
+
+2. Inserção de Dados:
+
+    Inserindo dados na tabela veiculos:
+
+        - Exemplo: Inserir um veículo com placa, modelo, ano e cor.
+
+    Inserindo dados na tabela clientes:
+
+        - Exemplo: Inserir um cliente com nome, telefone e endereço.
+
+    Inserindo dados na tabela servico:
+
+        - Exemplo: Inserir um serviço de "Troca de Óleo" com valor da mão de obra.
+
+    Inserindo dados na tabela ordens_de_servicos:
+
+        - Exemplo: Inserir uma ordem de serviço com data de emissão, veículo relacionado e cliente relacionado.
+
+3. Consultas (SELECT Statements):
+
+    Recuperar todos os veículos:
+
+        - Exemplo: Mostrar todos os veículos registrados.
+
+    Filtrar clientes pelo nome:
+
+        - Exemplo: Mostrar todos os clientes com nome "João Silva".
+
+    Calcular descontos nos serviços:
+
+        - Exemplo: Calcular um desconto de 10% no valor do serviço.
+
+    Ordenar ordens de serviço por data de emissão:
+
+        - Exemplo: Mostrar as ordens de serviço ordenadas pela data de emissão de forma decrescente.
+
+    Agrupar e filtrar atendimentos por cliente:
+
+        - Exemplo: Contar o número de atendimentos por cliente e filtrar clientes com mais de um atendimento.
+
+    Realizar junções entre tabelas:
+
+        - Exemplo: Mostrar o nome do cliente, modelo do veículo e descrição do serviço em cada ordem de serviço.
+

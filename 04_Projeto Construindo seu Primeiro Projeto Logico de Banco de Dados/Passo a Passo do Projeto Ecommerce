@@ -1,0 +1,128 @@
+Passo a Passo do Projeto Ecommerce
+
+Passo 1: Criação das Tabelas
+Para criar tabelas no banco de dados, usamos o comando CREATE TABLE. Vamos criar várias tabelas para armazenar informações sobre usuários, vendedores, produtos, pedidos, etc.
+ 1.Tabela "usuarios":
+   • idusuarios: chave primária, tipo inteiro.
+   • nome_cliente: tipo texto, até 100 caracteres, não nulo.
+   • email_cliente: tipo texto, até 100 caracteres, não nulo e único.
+   • telefone_cliente: tipo texto, até 20 caracteres.
+   • endereco_cliente: tipo texto, até 255 caracteres.
+   • senha_cliente: tipo texto, até 15 caracteres, não nulo.
+   • documento_cliente: tipo texto, até 20 caracteres, não nulo e único.
+ 2.Tabela "vendedores":
+   • idvendedores: chave primária, tipo inteiro.
+   • nome_vendedor: tipo texto, até 100 caracteres, não nulo.
+   • email_vendedor: tipo texto, até 100 caracteres, não nulo e único.
+   • telefone_vendedor: tipo texto, até 20 caracteres.
+   • tipo_documento: tipo enum, valores 'cpf' ou 'cnpj', não nulo.
+   • numero_documento: tipo texto, até 20 caracteres, não nulo e único.
+ 3.Tabela "produtos":
+   • id_produtos: chave primária, tipo inteiro.
+   • nome_produto: tipo texto, até 100 caracteres, não nulo.
+   • descricao_produto: tipo texto pequeno.
+   • preco_produto: tipo decimal, não nulo e maior ou igual a zero.
+   • quantidade_estoque: tipo inteiro, não nulo e maior ou igual a zero.
+   • vendedores_idvendedores: chave estrangeira referenciando vendedores.
+   • fornecedores_idfornecedores: chave estrangeira referenciando fornecedores.
+ 4.Tabela "fornecedores":
+   • idfornecedores: chave primária, tipo inteiro.
+   • nome_fornecedor: tipo texto, até 100 caracteres, não nulo.
+   • email_fornecedor: tipo texto, até 100 caracteres, não nulo e único.
+   • telefone_fornecedor: tipo texto, até 20 caracteres.
+   • endereco_fornecedor: tipo texto, até 255 caracteres.
+   • documento_fornecedor: tipo texto, até 20 caracteres, não nulo e único.
+ 5.Tabela "pedidos":
+   • id_pedidos: chave primária, tipo inteiro.
+   • data_pedido: tipo data e hora, não nulo.
+   • status_pedido: tipo texto, até 50 caracteres, não nulo.
+   • frete: tipo decimal, não nulo e maior ou igual a zero.
+   • usuarios_idusuarios: chave estrangeira referenciando usuarios.
+ 6.Tabela "itenspedido":
+   • id_itenspedido: chave primária, tipo inteiro.
+   • quantidade: tipo inteiro, não nulo e maior que zero.
+   • preco_total: tipo decimal, não nulo e maior ou igual a zero.
+   • pedidos_idpedidos: chave estrangeira referenciando pedidos.
+   • produtos_idprodutos: chave estrangeira referenciando produtos.
+ 7.Tabela "avaliacoesprodutos":
+   • id_avaliacoesprodutos: chave primária, tipo inteiro.
+   • nota: tipo inteiro, não nulo e entre 1 e 5.
+   • comentario: tipo texto pequeno.
+   • produtos_idprodutos: chave estrangeira referenciando produtos.
+   • usuarios_idusuarios: chave estrangeira referenciando usuarios.
+ 8.Tabela "categoriasprodutos":
+   • id_categoriasprodutos: chave primária, tipo inteiro.
+   • nome_categoria: tipo texto, até 100 caracteres, não nulo.
+   • produtos_idprodutos: chave estrangeira referenciando produtos.
+ 9.Tabela "enderecosusuarios":
+   • idenderecosusuarios: chave primária, tipo inteiro.
+   • idusuarios: chave estrangeira referenciando usuarios.
+   • endereco_usuario: tipo texto, até 255 caracteres, não nulo.
+ 10.Tabela "produtoscategoria":
+   • idprodutoscategoria: chave primária, tipo inteiro.
+   • idprodutos: chave estrangeira referenciando produtos.
+   • idcategoriasprodutos: chave estrangeira referenciando categoriasprodutos.
+ 11.Tabela "pagamentos":
+   • idpagamentos: chave primária, tipo inteiro.
+   • idpedidos: chave estrangeira referenciando pedidos.
+   • valor_pagamento: tipo decimal, não nulo e maior ou igual a zero.
+   • metodo_pagamento: tipo enum, valores 'cartao de credito', 'boleto bancario', 'pix', não nulo.
+   • data_pagamento: tipo data e hora, não nulo.
+ 12.Tabela "fornecedoresprodutos":
+   • idfornecedoresprodutos: chave primária, tipo inteiro.
+   • idfornecedores: chave estrangeira referenciando fornecedores.
+   • idprodutos: chave estrangeira referenciando produtos.
+ 13.Tabela "cuponsdesconto":
+   • idcuponsdesconto: chave primária, tipo inteiro.
+   • codigo_cupom: tipo texto, até 50 caracteres, não nulo e único.
+   • desconto: tipo decimal, não nulo e maior ou igual a zero.
+   • validade: tipo data, não nulo.
+ 14.Tabela "cuponsusados":
+   • idcuponsusados: chave primária, tipo inteiro.
+   • idcuponsdesconto: chave estrangeira referenciando cuponsdesconto.
+   • idusuarios: chave estrangeira referenciando usuarios.
+   • idpedidos: chave estrangeira referenciando pedidos.
+ 15.Tabela "devolucoes":
+   • iddevolucoes: chave primária, tipo inteiro.
+   • idpedidos: chave estrangeira referenciando pedidos.
+   • motivo_devolucao: tipo texto, até 255 caracteres, não nulo.
+   • data_devolucao: tipo data e hora, não nulo.
+ 16.Tabela "estoques":
+   • idestoques: chave primária, tipo inteiro.
+   • idprodutos: chave estrangeira referenciando produtos.
+   • quantidade: tipo inteiro, não nulo e maior ou igual a zero.
+
+Passo 2: Inserção de Dados nas Tabelas
+Para inserir dados nas tabelas, usamos o comando INSERT INTO.
+ 1.Exemplo na tabela "usuarios":
+   • Inserir dados fictícios como idusuarios, nome_cliente, email_cliente, telefone_cliente, endereco_cliente, senha_cliente, documento_cliente.
+
+Passo 3: Recuperação de Dados com SELECT Statement
+Para recuperar dados das tabelas, usamos o comando SELECT.
+ 1.Exemplo na tabela "produtos":
+   • Recuperar todos os dados da tabela produtos.
+
+Passo 4: Filtros com WHERE Statement
+Para filtrar dados com base em uma condição, usamos o comando WHERE.
+ 1.Exemplo na tabela "usuarios":
+   • Filtrar registros onde o nome_cliente é "Carlos Oliveira".
+
+Passo 5: Expressões para Atributos Derivados
+Para gerar atributos derivados, usamos expressões.
+ 1.Exemplo na tabela "pedidos":
+   • Calcular um desconto baseado no valor do frete.
+
+Passo 6: Ordenação de Dados com ORDER BY
+Para ordenar os dados, usamos o comando ORDER BY.
+ 1.Exemplo na tabela "pedidos":
+   • Ordenar os registros pela data do pedido em ordem decrescente.
+
+Passo 7: Condições de Filtros aos Grupos – HAVING Statement
+Para aplicar condições aos grupos de resultados, usamos o comando HAVING.
+ 1.Exemplo na tabela "pedidos":
+   • Contar o número de pedidos por usuário e aplicar uma condição ao grupo.
+
+Passo 8: Junções entre Tabelas (Continuação)
+ 1.Exemplo de junção entre tabelas:
+   • Combinar dados das tabelas usuarios, pedidos, itenspedido e produtos para obter informações do cliente, produtos e data do pedido.
+
