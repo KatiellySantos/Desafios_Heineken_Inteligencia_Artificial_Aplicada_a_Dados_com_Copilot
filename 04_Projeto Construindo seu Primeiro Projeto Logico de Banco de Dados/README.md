@@ -6,31 +6,31 @@ Este projeto tem como objetivo criar um banco de dados lógico para uma aplicaç
 
 💡 Funcionalidades Principais
 
-    * Gerenciamento completo de usuários e vendedores.
+    Gerenciamento completo de usuários e vendedores.
 
-    * Controle de estoque e cadastro de produtos.
+    Controle de estoque e cadastro de produtos.
 
-    * Processamento de pedidos com associação de itens, descontos e pagamentos.
+    Processamento de pedidos com associação de itens, descontos e pagamentos.
 
-    * Rastreamento de avaliações de produtos pelos usuários.
+    Rastreamento de avaliações de produtos pelos usuários.
 
-    * Suporte a relatórios e consultas complexas utilizando JOINs e agregações.
+    Suporte a relatórios e consultas complexas utilizando JOINs e agregações.
 
 📦 Estrutura do Banco de Dados
 
 O banco de dados contém as seguintes tabelas principais:
 
-    * 👤 Usuários: Dados pessoais, contatos e endereço.
+    👤 Usuários: Dados pessoais, contatos e endereço.
 
-    * 🛍️ Produtos: Informações detalhadas, incluindo preço, estoque e vendedores associados.
+    🛍️ Produtos: Informações detalhadas, incluindo preço, estoque e vendedores associados.
 
-    * 📦 Pedidos: Registro de compras feitas por usuários com status e frete.
+    📦 Pedidos: Registro de compras feitas por usuários com status e frete.
 
-    * 🔧 Avaliações: Feedback dos clientes sobre os produtos.
+    🔧 Avaliações: Feedback dos clientes sobre os produtos.
 
-    * 📄 Cupons de Desconto: Controle de promoções e cupons usados.
+    📄 Cupons de Desconto: Controle de promoções e cupons usados.
 
-    * 📊 Relatórios: Consultas para análise de dados, como total de pedidos por cliente.
+    📊 Relatórios: Consultas para análise de dados, como total de pedidos por cliente.
 
 🚀 Consultas Exemplares
 
