@@ -6,37 +6,37 @@ Este projeto visa criar e refinar um esquema conceitual de banco de dados para u
 
 💡 Objetivos
 
-    * Estruturar um banco de dados relacional com foco na consistência e integridade de dados.
+    Estruturar um banco de dados relacional com foco na consistência e integridade de dados.
 
-    * Facilitar a gestão de uma oficina mecânica por meio de um modelo de dados bem definido.
+    Facilitar a gestão de uma oficina mecânica por meio de um modelo de dados bem definido.
 
-    * Criar relações entre entidades essenciais como clientes, veículos, ordens de serviço, equipes e peças.
+    Criar relações entre entidades essenciais como clientes, veículos, ordens de serviço, equipes e peças.
 
 📦 Estrutura do Banco de Dados
 
 O modelo conceitual inclui as seguintes entidades principais:
 
-    * 👤 Clientes: Dados pessoais, endereço, telefone e e-mail.
+    👤 Clientes: Dados pessoais, endereço, telefone e e-mail.
 
-    * 🚗 Veículos: Informações sobre veículos, como placa, modelo, ano e tipo de combustível.
+    🚗 Veículos: Informações sobre veículos, como placa, modelo, ano e tipo de combustível.
 
-    * 🛠️ Mecânicos: Dados pessoais e especialidades dos mecânicos.
+    🛠️ Mecânicos: Dados pessoais e especialidades dos mecânicos.
 
-    * 📄 Ordens de Serviço: Registro de serviços realizados, incluindo status e valores.
+    📄 Ordens de Serviço: Registro de serviços realizados, incluindo status e valores.
 
-    * 👥 Equipes: Organização dos mecânicos em equipes de trabalho.
+    👥 Equipes: Organização dos mecânicos em equipes de trabalho.
 
-    * 🔧 Serviços: Descrição e mão de obra associada.
+    🔧 Serviços: Descrição e mão de obra associada.
 
-    * ⚙️ Peças: Detalhes sobre peças utilizadas nas ordens de serviço.
+    ⚙️ Peças: Detalhes sobre peças utilizadas nas ordens de serviço.
 
-    * 📋 Itens de OS: Associação de serviços e peças às ordens de serviço.
+    📋 Itens de OS: Associação de serviços e peças às ordens de serviço.
 
 💻 Tecnologias Utilizadas
 
-    * Ferramentas de Modelagem: DB Designer, MySQL Workbench ou ferramentas similares.
+    Ferramentas de Modelagem: DB Designer, MySQL Workbench ou ferramentas similares.
 
-    * Banco de Dados Sugerido: PostgreSQL ou MySQL 🛢️
+    Banco de Dados Sugerido: PostgreSQL ou MySQL 🛢️
 
 🎯 Como Usar
 
