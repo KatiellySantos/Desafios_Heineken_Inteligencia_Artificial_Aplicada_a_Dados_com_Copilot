@@ -6,25 +6,25 @@ Este projeto tem como objetivo desenvolver um modelo de banco de dados otimizado
 
 💻 Tecnologias Utilizadas
 
-    * Banco de Dados: PostgreSQL ou MySQL 🛢️
+    Banco de Dados: PostgreSQL ou MySQL 🛢️
 
-    * Ferramenta de Modelagem: DB Designer, MySQL Workbench, ou equivalente 🛠️
+    Ferramenta de Modelagem: DB Designer, MySQL Workbench, ou equivalente 🛠️
 
 🗂️ Estrutura do Banco de Dados
 
 O modelo do banco de dados inclui as seguintes entidades principais:
 
-    * 👤 Usuários: Informações pessoais e de login.
+    👤 Usuários: Informações pessoais e de login.
 
-    * 📍 Endereços: Relacionados aos usuários para entregas.
+    📍 Endereços: Relacionados aos usuários para entregas.
 
-    * 📦 Pedidos e Itens do Pedido: Registra os pedidos feitos e os produtos incluídos.
+    📦 Pedidos e Itens do Pedido: Registra os pedidos feitos e os produtos incluídos.
 
-    * 💳 Pagamentos e Devoluções: Rastreamento de transações financeiras.
+    💳 Pagamentos e Devoluções: Rastreamento de transações financeiras.
 
-    * 🛍️ Produtos, Categorias e Avaliações: Para gerenciar o catálogo e feedback dos clientes.
+    🛍️ Produtos, Categorias e Avaliações: Para gerenciar o catálogo e feedback dos clientes.
 
-    * 📦 Estoque e Fornecedores: Controle de inventário e fornecimento de mercadorias.
+    📦 Estoque e Fornecedores: Controle de inventário e fornecimento de mercadorias.
 
 As relações entre as tabelas foram cuidadosamente desenhadas para garantir consistência e integridade de dados.
 
@@ -44,11 +44,11 @@ As relações entre as tabelas foram cuidadosamente desenhadas para garantir con
 
 🌟 Funcionalidades
 
-    * CRUD (Create, Read, Update, Delete) para usuários, produtos, pedidos e mais.
+    CRUD (Create, Read, Update, Delete) para usuários, produtos, pedidos e mais.
 
-    * 📊 Geração de relatórios de estoque, vendas e avaliações.
+    📊 Geração de relatórios de estoque, vendas e avaliações.
 
-    * 💳 Suporte à integração com sistemas de pagamento.
+    💳 Suporte à integração com sistemas de pagamento.
 
 📩 Contato
 
