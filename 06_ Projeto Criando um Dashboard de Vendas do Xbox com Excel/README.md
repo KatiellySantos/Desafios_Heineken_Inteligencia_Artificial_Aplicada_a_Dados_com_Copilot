@@ -1,17 +1,16 @@
 # 🎮 Projeto Criando um Dashboard de Vendas do Xbox com Excel 📊
 
-Descrição do Projeto
-
-Este projeto tem como objetivo desenvolver um **Dashboard de Vendas do Xbox** utilizando o Microsoft Excel. O dashboard foi projetado para permitir uma análise clara e visual dos dados, facilitando a identificação de tendências e insights estratégicos. 🚀
+Este projeto tem como objetivo desenvolver um **Dashboard de Vendas do Xbox** utilizando o Microsoft Excel. O dashboard foi projetado 
+para permitir uma análise clara e visual dos dados, facilitando a identificação de tendências e insights estratégicos. 🚀
 
 🎯 Fontes de Dados
 
 Os dados utilizados para criar o dashboard foram obtidos a partir de uma base fictícia de vendas simuladas, que inclui informações detalhadas sobre:
 
-- * Assinaturas: Dados referentes aos tipos de assinaturas disponíveis (Anual, Mensal e Trimestral), bem como seus preços médios.
-- * Planos: Informações sobre a distribuição percentual dos planos Core, Standard e Ultimate.
-- * Passes de Temporada: Detalhes sobre os preços médios dos passes de temporada EA Play e Minecraft.
-- * Cupons e Descontos: Dados adicionais sobre cupons aplicados e sua relação com os valores totais.
+* Assinaturas: Dados referentes aos tipos de assinaturas disponíveis (Anual, Mensal e Trimestral), bem como seus preços médios.
+* Planos: Informações sobre a distribuição percentual dos planos Core, Standard e Ultimate.
+* Passes de Temporada: Detalhes sobre os preços médios dos passes de temporada EA Play e Minecraft.
+* Cupons e Descontos: Dados adicionais sobre cupons aplicados e sua relação com os valores totais.
 
 Os dados foram organizados em uma planilha base no Excel, permitindo a criação de tabelas dinâmicas e gráficos. 📂
 
@@ -26,15 +25,15 @@ Para garantir a criação de um dashboard funcional e eficiente, o seguinte flux
 O dashboard final foi composto por três elementos principais:
 
 1. **Preço Médio por Tipo de Assinatura**:
-   - Gráfico de barras exibindo o preço médio das assinaturas nos formatos Anual, Mensal e Trimestral.
+   - **Gráfico de barras**: exibindo o preço médio das assinaturas nos formatos Anual, Mensal e Trimestral.
    - **Dados Utilizados**: Preços médios calculados com base na planilha inicial.
 
 2. **Distribuição dos Planos**:
-   - Gráfico de rosca que mostra a porcentagem de participação de cada plano (Core, Standard e Ultimate).
+   - **Gráfico de rosca**: que mostra a porcentagem de participação de cada plano (Core, Standard e Ultimate).
    - **Dados Utilizados**: Proporção calculada sobre o total de vendas dos planos.
 
 3. **Média de Passes de Temporada**:
-   - Gráfico de barras que compara os preços médios dos passes de temporada EA Play e Minecraft.
+   - **Gráfico de barras**: que compara os preços médios dos passes de temporada EA Play e Minecraft.
    - **Dados Utilizados**: Valores médios baseados nos registros da planilha.
 
 💡 Tecnologias Utilizadas
