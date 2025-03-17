@@ -2,31 +2,33 @@
 
 📝 Descrição do Projeto
 
-Este projeto consiste em criar e implementar um banco de dados lógico do zero para gerenciar dados de uma oficina mecânica. O foco está na organização das tabelas e relações, garantindo eficiência e integridade no armazenamento e recuperação de informações.
+Este projeto consiste em criar e implementar um banco de dados lógico do zero para gerenciar dados de uma oficina mecânica. 
+O foco está na organização das tabelas e relações, garantindo eficiência e integridade no armazenamento e recuperação de informações.
 
 💡 Objetivos
 
-    * Estruturar um banco de dados relacional com tabelas para clientes, veículos, ordens de serviço, equipes, mecânicos, peças e serviços.
+    Estruturar um banco de dados relacional com tabelas para clientes, veículos, ordens de serviço, equipes, mecânicos, 
+    peças e serviços.
 
-    * Permitir consultas detalhadas que forneçam insights e atendam às necessidades operacionais da oficina.
+    Permitir consultas detalhadas que forneçam insights e atendam às necessidades operacionais da oficina.
 
-    * Assegurar boas práticas no uso de chaves primárias, estrangeiras e integridade referencial.
+    Assegurar boas práticas no uso de chaves primárias, estrangeiras e integridade referencial.
 
 📦 Estrutura do Banco de Dados
 
 As principais tabelas do banco incluem:
 
-    * 👤 Clientes: Informações básicas, como nome, endereço e telefone.
+    👤 Clientes: Informações básicas, como nome, endereço e telefone.
 
-    * 🚗 Veículos: Dados do veículo, incluindo modelo, ano, cor e tipo de combustível.
+    🚗 Veículos: Dados do veículo, incluindo modelo, ano, cor e tipo de combustível.
 
-    * 📋 Ordens de Serviços: Registro de serviços realizados, datas e status.
+    📋 Ordens de Serviços: Registro de serviços realizados, datas e status.
 
-    * 🛠️ Equipes e Mecânicos: Estrutura das equipes e detalhes dos mecânicos, como especialidades.
+    🛠️ Equipes e Mecânicos: Estrutura das equipes e detalhes dos mecânicos, como especialidades.
 
-    * 🔩 Peças e Serviços: Descrição das peças utilizadas e serviços oferecidos.
+    🔩 Peças e Serviços: Descrição das peças utilizadas e serviços oferecidos.
 
-    * 📦 Itens da Ordem de Serviço: Associação de serviços e peças às ordens de serviço.
+    📦 Itens da Ordem de Serviço: Associação de serviços e peças às ordens de serviço.
 
 🚀 Consultas Exemplares
 
@@ -61,7 +63,8 @@ Exemplos de consultas SQL implementadas:
 
     2. Execute os scripts SQL fornecidos para criar e popular o banco de dados.
 
-    3. Utilize uma ferramenta de gerenciamento, como MySQL Workbench ou DBeaver, para executar as consultas e explorar os dados.
+    3. Utilize uma ferramenta de gerenciamento, como MySQL Workbench ou DBeaver, para executar as consultas e explorar
+    os dados.
 
     📩 Contato
 
